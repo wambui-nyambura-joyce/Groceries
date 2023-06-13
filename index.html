@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mboga Mart</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        functionstickyMenu();{
+            var sticky=document.getElementById('sticky');
+            if(window.pageYOffset > 220){
+                sticky.classList.add('sticky');
+            }
+            else{
+                sticky.classList.remove('sticky');
+            }
+        }
+        window.onscroll = function(){
+            stickyMenu();
+        }
+    </script>
+
+</head>
+<body>
+   <div class="top1">
+    <div class="top2">Eat Fresh</div>
+   </div> 
+   <div class="menu" id="sticky">
+    <ul class="menu-ul">
+        <!-- <a href="#" class="a-menu"> <li><img src="/images/Grocery-logo-removebg-preview.png" id="logo"></li></a> -->
+        <a href="#" class="a-menu"> <li>Home</li></a>
+        <a href="#deals" class="a-menu"> <li>Services</li></a>
+        <a href="#vegetables" class="a-menu"> <li>Vegetables</li></a>
+        <a href="#fruits" class="a-menu"> <li>Fruits</li></a>
+        <a href="#" class="a-menu"> <li>Cart</li></a>
+    </ul>
+    <div class="search-box">
+       <form action="">
+        <input type="text" placeholder="Search..." name="search" class="search-input">
+        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+       </form>
+    </div>
+   </div>
+   <!-- home page -->
+   <div class="container">
+    <a href="#vegetables">
+        <div class="categories">
+            <img src="/images/image1.avif" class="item-image">
+            <div class="image-title">Vegetables</div>
+        </div>
+    </a>
+    <a href="#fruits">
+        <div class="categories">
+            <img src="/images/image2.avif" class="item-image">
+            <div class="image-title">Fruits</div>
+        </div>
+    </a>
+    <a href="#vegetables">
+        <div class="categories">
+            <img src="/images/image1.avif" class="item-image">
+            <div class="image-title">Vegetables</div>
+        </div>
+    </a>
+    <a href="#deals">
+        <div class="categories">
+            <img src="/images/image1.avif" class="item-image">
+            <div class="image-title">Deals</div>
+        </div>
+    </a>
+   </div>
+   <!-- deals page -->
+   <div class="deals-container" id="deals">
+    <div class="parallax">
+        <div class="title">SERVICES</div>
+    </div>
+    <div class="deal">
+        Save 20% on min purchase of $149 on vegetables <br>
+        <button class="coupon-btn">Add Coupon</button>
+    </div>
+    <div class="deal">
+        Save 10% on min purchase of $149 on fruits <br>
+        <button class="coupon-btn">Add Coupon</button>
+    </div>
+    <div class="deal">
+        Save 23% on min purchase of $149 on vegetables <br>
+        <button class="coupon-btn">Add Coupon</button>
+    </div>
+   </div>
+   <!-- veg page -->
+   <div class="deals-container" id="vegetables">
+    <div class="parallax">
+        <div class="title">VEGETABLES</div>
+    </div>
+    <div class="items">
+        <div class="images">
+            <img src="/images/image2.avif" class="item-image-size">
+        </div>
+        <div class="description">
+            <b>Organic Okra</b> <br>
+            <div class="item-select">
+                Price : $2.50/250gms
+            </div>
+            <label>Qty:</label>
+            <select class="item-select">
+                <option value="">250gms</option>
+                <option value="">450gms</option>
+                <option value="">650gms</option>
+                <option value="">850gms</option>
+            </select> <br>
+            <button class="buynow-btn">Buy Now</button>
+        </div>
+        
+    </div>
+    <div class="items">
+        <div class="images">
+            <img src="/images/image1.avif" class="item-image-size">
+        </div>
+        <div class="description">
+            <b>Kales</b> <br>
+            <div class="item-select">
+                Price : $3.50/250gms
+            </div>
+            <label>Qty:</label>
+            <select class="item-select">
+                <option value="">250gms</option>
+                <option value="">450gms</option>
+                <option value="">650gms</option>
+                <option value="">850gms</option>
+            </select> <br>
+            <button class="buynow-btn">Buy Now</button>
+        </div>
+    </div>
+        <div class="items">
+            <div class="images">
+                <img src="/images/image2.avif" class="item-image-size">
+            </div>
+            <div class="description">
+                <b>Spinach</b> <br>
+                <div class="item-select">
+                    Price : $4.50/250gms
+                </div>
+                <label>Qty:</label>
+                <select class="item-select">
+                    <option value="">250gms</option>
+                    <option value="">450gms</option>
+                    <option value="">650gms</option>
+                    <option value="">850gms</option>
+                </select> <br>
+                <button class="buynow-btn">Buy Now</button>
+            </div>
+            
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="/images/image2.avif" class="item-image-size">
+            </div>
+            <div class="description">
+                <b>Tomatoes</b> <br>
+                <div class="item-select">
+                    Price : $5.50/250gms
+                </div>
+                <label>Qty:</label>
+                <select class="item-select">
+                    <option value="">250gms</option>
+                    <option value="">450gms</option>
+                    <option value="">650gms</option>
+                    <option value="">850gms</option>
+                </select> <br>
+                <button class="buynow-btn">Buy Now</button>
+            </div>
+            
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="/images/image1.avif" class="item-image-size">
+            </div>
+            <div class="description">
+                <b>Carrots</b> <br>
+                <div class="item-select">
+                    Price : $1.50/250gms
+                </div>
+                <label>Qty:</label>
+                <select class="item-select">
+                    <option value="">250gms</option>
+                    <option value="">450gms</option>
+                    <option value="">650gms</option>
+                    <option value="">850gms</option>
+                </select> <br>
+                <button class="buynow-btn">Buy Now</button>
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <!-- fruits page -->
+    <div class="deals-container" id="fruits">
+        <div class="parallax">
+            <div class="title">FRUITS</div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="/images/image2.avif" class="item-image-size">
+            </div>
+            <div class="description">
+                <b>Organic Okra</b> <br>
+                <div class="item-select">
+                    Price : $2.50/250gms
+                </div>
+                <label>Qty:</label>
+                <select class="item-select">
+                    <option value="">250gms</option>
+                    <option value="">450gms</option>
+                    <option value="">650gms</option>
+                    <option value="">850gms</option>
+                </select> <br>
+                <button class="buynow-btn">Buy Now</button>
+            </div>
+            
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="/images/image1.avif" class="item-image-size">
+            </div>
+            <div class="description">
+                <b>Kales</b> <br>
+                <div class="item-select">
+                    Price : $3.50/250gms
+                </div>
+                <label>Qty:</label>
+                <select class="item-select">
+                    <option value="">250gms</option>
+                    <option value="">450gms</option>
+                    <option value="">650gms</option>
+                    <option value="">850gms</option>
+                </select> <br>
+                <button class="buynow-btn">Buy Now</button>
+            </div>
+        </div>
+            <div class="items">
+                <div class="images">
+                    <img src="/images/image2.avif" class="item-image-size">
+                </div>
+                <div class="description">
+                    <b>Spinach</b> <br>
+                    <div class="item-select">
+                        Price : $4.50/250gms
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option value="">250gms</option>
+                        <option value="">450gms</option>
+                        <option value="">650gms</option>
+                        <option value="">850gms</option>
+                    </select> <br>
+                    <button class="buynow-btn">Buy Now</button>
+                </div>
+                
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="/images/image2.avif" class="item-image-size">
+                </div>
+                <div class="description">
+                    <b>Tomatoes</b> <br>
+                    <div class="item-select">
+                        Price : $5.50/250gms
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option value="">250gms</option>
+                        <option value="">450gms</option>
+                        <option value="">650gms</option>
+                        <option value="">850gms</option>
+                    </select> <br>
+                    <button class="buynow-btn">Buy Now</button>
+                </div>
+                
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="/images/image1.avif" class="item-image-size">
+                </div>
+                <div class="description">
+                    <b>Carrots</b> <br>
+                    <div class="item-select">
+                        Price : $1.50/250gms
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option value="">250gms</option>
+                        <option value="">450gms</option>
+                        <option value="">650gms</option>
+                        <option value="">850gms</option>
+                    </select> <br>
+                    <button class="buynow-btn">Buy Now</button>
+                </div>
+                
+            </div>
+            
+        </div>
+        <!-- footer page -->
+        <div class="parallax1" id="bg">
+            <div class="footer">
+                <div class="quick-links">
+                    <div>Locations</div>
+                    <ul>
+                        <li><a href="" class="a-links">Addresses 1</a></li>
+                        <li><a href="" class="a-links">Addresses 2</a></li>
+                        <li><a href="" class="a-links">Addresses 3</a></li>
+                    </ul>
+                </div>
+                <div class="quick-links">
+                    <div>Careers</div>
+                    <ul>
+                        <li><a href="" class="a-links">Packing staff</a></li>
+                        <li><a href="" class="a-links">Delivery agents</a></li>
+                        <li><a href="" class="a-links">Shelf fillers</a></li>
+                    </ul>
+                </div>
+                <div class="quick-links">
+                    <div>Quick links</div>
+                    <ul>
+                        <li><a href="" class="a-links">Contact us</a></li>
+                        <li><a href="" class="a-links">FAQ</a></li>
+                        <li><a href="" class="a-links">Help</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+   <section class="credit">copyright &copy; by tech tinkerers | all rights reserved!</section>
+</body>
+</html>
